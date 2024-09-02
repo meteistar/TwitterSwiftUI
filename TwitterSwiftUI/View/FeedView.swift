@@ -9,7 +9,9 @@ import SwiftUI
 
 struct FeedView: View {
     var body: some View {
+        
         ZStack(alignment: .bottomTrailing) {
+            
             ScrollView {
                 VStack {
                     ForEach(0..<9) { _ in

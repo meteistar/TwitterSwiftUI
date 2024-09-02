@@ -39,6 +39,7 @@ struct TweetCell: View {
               .padding(.trailing)
             
             HStack {
+                
                 Button(action: {}, label: {
                     Image(systemName: "bubble.left")
                         .font(.system(size: 16))
