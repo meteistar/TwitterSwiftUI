@@ -16,8 +16,15 @@ struct SearchView: View {
                 .padding()
             VStack(alignment: .leading) {
                 ForEach(0..<10) { _ in
-                    UserCell()
                     HStack {Spacer()}
+                    
+                    NavigationLink(
+                        destination:
+                            UserProfileView(),
+                        label: {
+                            UserCell()
+                        })
+                    
                 }
             }.padding(.leading)
         }.navigationBarTitle("Search")
